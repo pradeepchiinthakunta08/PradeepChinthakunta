@@ -34,16 +34,17 @@ let debtToIncomeRation: number=35.0;
             if (isEmployed) {
 
 
+
+                if (debtToIncomeRation < 40) {
+                    console.log(`${customerName} is eligible for the loan.`);
+                }
 //                 4. Debt-to-Income Ratio:
 // o If the customer is employed, the system checks the debt-to-income (DTI) ratio.
 // o If the DTI ratio is less than 40%, the loan is approved.
 // o If the DTI ratio is 40% or greater, the loan is denied.
-                if (debtToIncomeRation < 40) {
-                    console.log(`${customerName} is eligible for the loan.`);
-                }
-
                 else {
-                    console.log(`${customerName} is not eligible for the loan because DTI ratio is 40% or greater.`);
+                    console.log(`${customerName} is not eligible for the loan
+                         because DTI ratio is 40% or greater.`);
                 }
             }
 
