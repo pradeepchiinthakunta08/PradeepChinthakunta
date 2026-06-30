@@ -1,13 +1,5 @@
-// import data from '../config/data.json' with {type: "json"};
-
-// console.log(data.top10horrorMovies);
-
-// import data from '../config/data.json';
-
-// console.log(data.top10horrorMovies);
-
-import queries from "../config/data.json"
-import config from "../config/config.json" 
+import queries from "../config/data.json" with {type: "json"};
+import config from "../config/config.json"  with {type: "json"};
 import { Client } from "pg";
 
 export class DBCommons {
